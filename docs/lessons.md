@@ -72,8 +72,8 @@ I studied how large agent systems manage a long context, and I expected to need 
 at my own agent's records. The context was never the problem: the largest prompt was 17,600 tokens of 64,000.
 
 The problem was somewhere else. When the model server still has the conversation in its cache, a turn is read
-in about 1 second, at any length. When the cache is lost, the same turn takes 12 to 35 seconds. One third of the
-turns had lost the cache, and they took **92 % of all prompt-reading time**.
+in about 1 second, at every length that I measured. When the cache is lost, the same turn takes 12 to 35 seconds.
+31 % of the turns had lost the cache, and they took **85 % of all prompt-reading time**.
 
 I made three guesses about the cause. Two were wrong, and I could show that they were wrong from the data. The
 third was right: a safety guard from another project of mine ran once a minute. It unloaded any model when GPU

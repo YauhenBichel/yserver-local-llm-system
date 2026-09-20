@@ -87,7 +87,7 @@ the gateway.
 | Generation speed | **50 tokens per second**, and 45 with an 8,000-token context |
 | Reading an 8,000-token prompt | **13.7 s**, about 590 tokens per second |
 | Three requests at the same time | the first token takes 13 times longer; total speed rises by only 6 % |
-| A turn of a long agent session, when the server still has the conversation in its cache | **about 1 s**, at any length I measured (up to 17,600 tokens) |
+| A turn of a long agent session, when the server still has the conversation in its cache | **1.0 to 1.4 s**, for prompts of 3,000 to 12,000 tokens |
 | The same turn, when the cache was lost | 12 to 35 s |
 
 All numbers, with the method and the limits of each: [docs/numbers.md](docs/numbers.md).
@@ -105,7 +105,7 @@ The short list. The full stories are in [docs/lessons.md](docs/lessons.md).
 4. **Make every check read the real state, not the configuration.** My watchdog was "active" in my script and
    not active in reality. The computer then stayed frozen for 8 hours and 22 minutes.
 5. **Protect the model and its cache from other programs.** In my agent's own records, the turns that lost the
-   cache were one third of the turns and took 92 % of the prompt-reading time.
+   cache were 31 % of the turns and took 85 % of the prompt-reading time.
 6. **Local models cannot review code yet.** One only praised. One invented errors that did not exist.
 7. **A finding is an assumption until a test confirms it.** This includes my own findings.
 
