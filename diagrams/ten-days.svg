@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080d1c"/><stop offset="1" stop-color="#101a36"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#7c6cff" stop-opacity="0.30"/><stop offset="1" stop-color="#7c6cff" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.05"/></pattern>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8f9fff"/></marker>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
+<ellipse cx="1250" cy="520" rx="420" ry="320" fill="url(#glow)"/>
+<text x="64" y="86" font-size="46" fill="#ffffff" font-weight="800">Ten days with my home server</text>
+<text x="64" y="124" font-size="23" fill="#9fb0e6">It answered, so I believed that it worked. Then I checked the real state.</text>
+<g><text x="1536" y="86" font-size="20" fill="#ffffff" font-weight="700" text-anchor="end">Yauhen Bichel</text><text x="1536" y="110" font-size="16" fill="#8fa3d9" text-anchor="end">github.com/YauhenBichel</text></g>
+<text x="880" y="268" font-size="17" fill="#8fa3d9" font-weight="600" letter-spacing="2" text-anchor="middle">DAY 1</text>
+<text x="1300" y="268" font-size="17" fill="#8fa3d9" font-weight="600" letter-spacing="2" text-anchor="middle">DAY 10</text>
+<text x="96" y="268" font-size="17" fill="#8fa3d9" font-weight="600" letter-spacing="2">WHAT CHANGED</text>
+<rect x="64" y="300" width="1472" height="72" rx="16" fill="#0f1830" stroke="#25345c"/>
+<text x="96" y="345" font-size="24" fill="#e8eeff">Where the models run</text>
+<text x="880" y="345" font-size="25" fill="#8f9bbd" text-anchor="middle">on the CPU</text>
+<path d="M1010 336 L1054 336" stroke="#8f9fff" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1300" y="346" font-size="26" fill="url(#accent)" font-weight="800" text-anchor="middle">on the built-in GPU</text>
+<rect x="64" y="384" width="1472" height="72" rx="16" fill="#0f1830" stroke="#25345c"/>
+<text x="96" y="429" font-size="24" fill="#e8eeff">Speed, same 30B model</text>
+<text x="880" y="429" font-size="25" fill="#8f9bbd" text-anchor="middle">42 tokens/s</text>
+<path d="M1010 420 L1054 420" stroke="#8f9fff" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1300" y="430" font-size="26" fill="url(#accent)" font-weight="800" text-anchor="middle">94 tokens/s</text>
+<rect x="64" y="468" width="1472" height="72" rx="16" fill="#0f1830" stroke="#25345c"/>
+<text x="96" y="513" font-size="24" fill="#e8eeff">Main coding model</text>
+<text x="880" y="513" font-size="25" fill="#8f9bbd" text-anchor="middle">30B</text>
+<path d="M1010 504 L1054 504" stroke="#8f9fff" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1300" y="514" font-size="26" fill="url(#accent)" font-weight="800" text-anchor="middle">80B · 50 tokens/s</text>
+<rect x="64" y="552" width="1472" height="72" rx="16" fill="#0f1830" stroke="#25345c"/>
+<text x="96" y="597" font-size="24" fill="#e8eeff">Text the model can read at once</text>
+<text x="880" y="597" font-size="25" fill="#8f9bbd" text-anchor="middle">4,096 tokens</text>
+<path d="M1010 588 L1054 588" stroke="#8f9fff" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1300" y="598" font-size="26" fill="url(#accent)" font-weight="800" text-anchor="middle">64,000 tokens</text>
+<rect x="64" y="636" width="1472" height="72" rx="16" fill="#0f1830" stroke="#25345c"/>
+<text x="96" y="681" font-size="24" fill="#e8eeff">A short request from my tools</text>
+<text x="880" y="681" font-size="25" fill="#8f9bbd" text-anchor="middle">7.5 s</text>
+<path d="M1010 672 L1054 672" stroke="#8f9fff" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1300" y="682" font-size="26" fill="url(#accent)" font-weight="800" text-anchor="middle">0.6 s</text>
+<rect x="64" y="720" width="1472" height="72" rx="16" fill="#0f1830" stroke="#25345c"/>
+<text x="96" y="765" font-size="24" fill="#e8eeff">When the computer stops responding</text>
+<text x="880" y="765" font-size="25" fill="#8f9bbd" text-anchor="middle">nobody is told</text>
+<path d="M1010 756 L1054 756" stroke="#8f9fff" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1300" y="766" font-size="26" fill="url(#accent)" font-weight="800" text-anchor="middle">restarts itself · alerts my phone</text>
+<text x="64" y="852" font-size="24" fill="#ffffff" font-weight="700">The lesson: do not trust a setting. Check the real state.</text>
+<text x="1536" y="852" font-size="18" fill="#93a5d6" text-anchor="end">All numbers measured on the same computer</text>
+</svg>

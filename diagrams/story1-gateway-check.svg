@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080d1c"/><stop offset="1" stop-color="#101a36"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+<pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity="0.05"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8f9fff"/></marker>
+<marker id="arbad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#fb7185"/></marker>
+<marker id="arok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker></defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
+<text x="64" y="84" font-size="42" fill="#fff" font-weight="800">How my gateway checks the length of a prompt</text>
+<text x="64" y="122" font-size="22" fill="#9fb0e6">A fast count first. An exact count only when the prompt is near the limit. Images and audio are</text>
+<text x="64" y="152" font-size="22" fill="#9fb0e6">not counted as text.</text>
+<text x="1536" y="72" font-size="20" fill="#fff" font-weight="700" text-anchor="end">Yauhen Bichel</text><text x="1536" y="96" font-size="16" fill="#8fa3d9" text-anchor="end">github.com/YauhenBichel</text>
+<rect x="64" y="210" width="240" height="206" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="102" cy="246" r="15" fill="url(#accent)"/><text x="102" y="253" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">1</text>
+<text x="128" y="254" font-size="22" fill="#fff" font-weight="700" text-anchor="start">A prompt</text>
+<text x="128" y="284" font-size="22" fill="#fff" font-weight="700" text-anchor="start">arrives</text>
+<text x="88" y="330" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">from a tool</text>
+<path d="M310 313 L366 313" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="372" y="210" width="240" height="206" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="410" cy="246" r="15" fill="url(#accent)"/><text x="410" y="253" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">2</text>
+<text x="436" y="254" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Count the</text>
+<text x="436" y="284" font-size="22" fill="#fff" font-weight="700" text-anchor="start">characters</text>
+<text x="396" y="330" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">fast, no model</text>
+<text x="396" y="356" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">needed</text>
+<path d="M618 313 L674 313" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="680" y="210" width="240" height="206" rx="18" fill="#0f1830" stroke="url(#accent)" stroke-width="2.5"/>
+<circle cx="718" cy="246" r="15" fill="url(#accent)"/><text x="718" y="253" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">3</text>
+<text x="744" y="254" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Near the</text>
+<text x="744" y="284" font-size="22" fill="#fff" font-weight="700" text-anchor="start">limit?</text>
+<text x="704" y="330" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Most prompts are</text>
+<text x="704" y="356" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">not.</text>
+<path d="M926 313 L982 313" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<text x="954.0" y="301.0" font-size="16" fill="#8f9fff" text-anchor="middle" font-weight="600">yes</text>
+<rect x="988" y="210" width="240" height="206" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="1026" cy="246" r="15" fill="url(#accent)"/><text x="1026" y="253" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">4</text>
+<text x="1052" y="254" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Ask for an</text>
+<text x="1052" y="284" font-size="22" fill="#fff" font-weight="700" text-anchor="start">exact token</text>
+<text x="1052" y="314" font-size="22" fill="#fff" font-weight="700" text-anchor="start">count</text>
+<text x="1012" y="360" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">from the model</text>
+<text x="1012" y="386" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">server</text>
+<path d="M1234 313 L1290 313" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="1296" y="210" width="240" height="206" rx="18" fill="#0f1830" stroke="url(#accent)" stroke-width="2.5"/>
+<circle cx="1334" cy="246" r="15" fill="url(#accent)"/><text x="1334" y="253" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">5</text>
+<text x="1360" y="254" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Over 65,536</text>
+<text x="1360" y="284" font-size="22" fill="#fff" font-weight="700" text-anchor="start">tokens?</text>
+<text x="1320" y="330" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">The real limit.</text>
+<rect x="1296" y="486" width="240" height="190" rx="18" fill="#0f1830" stroke="#fb7185" stroke-width="2.5"/>
+<rect x="1320" y="506" width="30" height="5" rx="2.5" fill="#fb7185"/>
+<text x="1320" y="542" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Reject</text>
+<text x="1320" y="588" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Error: prompt is</text>
+<text x="1320" y="614" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">too long</text>
+<path d="M1416 422 L1416 480" stroke="#fb7185" stroke-width="3" fill="none" marker-end="url(#arbad)"/>
+<text x="1434" y="458" font-size="16" fill="#fb7185" font-weight="600">yes</text>
+<rect x="372" y="486" width="856" height="190" rx="18" fill="#0f1830" stroke="#34d399" stroke-width="2.5"/>
+<rect x="396" y="506" width="30" height="5" rx="2.5" fill="#34d399"/>
+<text x="396" y="542" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Send the prompt to the model</text>
+<text x="396" y="588" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">The model reads all of it, or none of it. It never reads a part.</text>
+<path d="M800 422 L800 480" stroke="#34d399" stroke-width="3" fill="none" marker-end="url(#arok)"/>
+<text x="816" y="458" font-size="16" fill="#34d399" font-weight="600">no</text>
+<path d="M1296 380 L1264 380 L1264 560 L1236 560" stroke="#34d399" stroke-width="3" fill="none" marker-end="url(#arok)"/>
+<text x="1240" y="458" font-size="16" fill="#34d399" font-weight="600" text-anchor="end">no</text>
+<rect x="64" y="486" width="240" height="250" rx="18" fill="#0f1830" stroke="#fbbf24" stroke-width="2.5"/>
+<rect x="88" y="506" width="30" height="5" rx="2.5" fill="#fbbf24"/>
+<text x="88" y="542" font-size="22" fill="#fff" font-weight="700" text-anchor="start">My own mistake</text>
+<text x="88" y="588" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">First I counted a</text>
+<text x="88" y="614" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">picture as text:</text>
+<text x="88" y="640" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">163,480 characters.</text>
+<text x="88" y="666" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Every image was</text>
+<text x="88" y="692" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">refused.</text>
+<line x1="64" y1="806" x2="1536" y2="806" stroke="#25345c"/>
+<text x="64" y="852" font-size="23" fill="#fff" font-weight="700">Test both sides of every limit: a long text, and also a picture.</text>
+</svg>

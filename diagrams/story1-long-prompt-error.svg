@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080d1c"/><stop offset="1" stop-color="#101a36"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+<pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity="0.05"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8f9fff"/></marker>
+<marker id="arbad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#fb7185"/></marker>
+<marker id="arok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker></defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
+<text x="64" y="84" font-size="42" fill="#fff" font-weight="800">A long prompt got another request's answer</text>
+<text x="64" y="122" font-size="22" fill="#9fb0e6">The model can read 65,536 tokens at one time. This is what happened above that limit, and what</text>
+<text x="64" y="152" font-size="22" fill="#9fb0e6">happens now.</text>
+<text x="1536" y="72" font-size="20" fill="#fff" font-weight="700" text-anchor="end">Yauhen Bichel</text><text x="1536" y="96" font-size="16" fill="#8fa3d9" text-anchor="end">github.com/YauhenBichel</text>
+<text x="64" y="184" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.6" text-anchor="start">A SHORT REQUEST</text>
+<rect x="64" y="196" width="432" height="166" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="88" y="216" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="88" y="252" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Request A</text>
+<text x="88" y="298" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">293 tokens</text>
+<path d="M502 279 L578 279" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="584" y="196" width="432" height="166" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="608" y="216" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="608" y="252" font-size="22" fill="#fff" font-weight="700" text-anchor="start">The server reads all of it</text>
+<text x="608" y="298" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">and answers</text>
+<path d="M1022 279 L1098 279" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="1104" y="196" width="432" height="166" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="1128" y="216" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="1128" y="252" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Answer A</text>
+<text x="1128" y="298" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">175 tokens. Correct.</text>
+<text x="64" y="392" font-size="16" fill="#fb7185" font-weight="600" letter-spacing="1.6" text-anchor="start">THEN A REQUEST THAT IS TOO LONG</text>
+<rect x="64" y="404" width="432" height="166" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="88" y="424" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="88" y="460" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Request B</text>
+<text x="88" y="506" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">about 70,000 tokens, over the limit</text>
+<path d="M502 487 L578 487" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="584" y="404" width="432" height="166" rx="18" fill="#0f1830" stroke="#fb7185" stroke-width="2.5"/>
+<rect x="608" y="424" width="30" height="5" rx="2.5" fill="#fb7185"/>
+<text x="608" y="460" font-size="22" fill="#fff" font-weight="700" text-anchor="start">The server cuts the prompt</text>
+<text x="608" y="506" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">It reads only 32,770 tokens. No error,</text>
+<text x="608" y="532" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">no warning.</text>
+<path d="M1022 487 L1098 487" stroke="#fb7185" stroke-width="3" fill="none" marker-end="url(#arbad)"/>
+<rect x="1104" y="404" width="432" height="166" rx="18" fill="#0f1830" stroke="#fb7185" stroke-width="2.5"/>
+<rect x="1128" y="424" width="30" height="5" rx="2.5" fill="#fb7185"/>
+<text x="1128" y="460" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Status 200, and Answer A</text>
+<text x="1128" y="490" font-size="22" fill="#fff" font-weight="700" text-anchor="start">again</text>
+<text x="1128" y="536" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">The same 175 tokens, word for word.</text>
+<text x="64" y="600" font-size="16" fill="#34d399" font-weight="600" letter-spacing="1.6" text-anchor="start">AFTER THE FIX</text>
+<rect x="64" y="612" width="432" height="166" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="88" y="632" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="88" y="668" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Request B again</text>
+<text x="88" y="714" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">about 70,000 tokens</text>
+<path d="M502 695 L578 695" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="584" y="612" width="432" height="166" rx="18" fill="#0f1830" stroke="#34d399" stroke-width="2.5"/>
+<rect x="608" y="632" width="30" height="5" rx="2.5" fill="#34d399"/>
+<text x="608" y="668" font-size="22" fill="#fff" font-weight="700" text-anchor="start">My gateway counts the tokens</text>
+<text x="608" y="714" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Too long, so it does not reach the</text>
+<text x="608" y="740" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">model.</text>
+<path d="M1022 695 L1098 695" stroke="#34d399" stroke-width="3" fill="none" marker-end="url(#arok)"/>
+<rect x="1104" y="612" width="432" height="166" rx="18" fill="#0f1830" stroke="#34d399" stroke-width="2.5"/>
+<rect x="1128" y="632" width="30" height="5" rx="2.5" fill="#34d399"/>
+<text x="1128" y="668" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Error: prompt is too long</text>
+<text x="1128" y="714" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">In 0.2 seconds. Tools understand this</text>
+<text x="1128" y="740" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">error.</text>
+<line x1="64" y1="806" x2="1536" y2="806" stroke="#25345c"/>
+<text x="64" y="852" font-size="23" fill="#fff" font-weight="700">Rule: reject a prompt that does not fit. Never cut it silently.</text>
+</svg>

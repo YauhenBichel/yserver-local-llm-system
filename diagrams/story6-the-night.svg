@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080d1c"/><stop offset="1" stop-color="#101a36"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+<pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity="0.05"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8f9fff"/></marker>
+<marker id="arbad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#fb7185"/></marker>
+<marker id="arok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker></defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
+<text x="64" y="84" font-size="42" fill="#fff" font-weight="800">The night my server stopped for 8 hours</text>
+<text x="64" y="122" font-size="22" fill="#9fb0e6">Nothing restarted it, and nobody was told. The reasons were two settings that said yes while the</text>
+<text x="64" y="152" font-size="22" fill="#9fb0e6">real state said no.</text>
+<text x="1536" y="72" font-size="20" fill="#fff" font-weight="700" text-anchor="end">Yauhen Bichel</text><text x="1536" y="96" font-size="16" fill="#8fa3d9" text-anchor="end">github.com/YauhenBichel</text>
+<line x1="120" y1="330" x2="1480" y2="330" stroke="#25345c" stroke-width="6" stroke-linecap="round"/>
+<line x1="120" y1="330" x2="1480" y2="330" stroke="#fb7185" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+<circle cx="120" cy="330" r="11" fill="#fb7185" stroke="#080d1c" stroke-width="4"/>
+<circle cx="180" cy="330" r="11" fill="#fbbf24" stroke="#080d1c" stroke-width="4"/>
+<circle cx="1480" cy="330" r="11" fill="#34d399" stroke="#080d1c" stroke-width="4"/>
+<text x="120" y="300" font-size="22" fill="#fff" font-weight="800" text-anchor="middle">22:53</text><text x="1480" y="300" font-size="22" fill="#fff" font-weight="800" text-anchor="middle">07:15</text>
+<text x="800.0" y="296" font-size="40" fill="#fb7185" font-weight="800" text-anchor="middle">8 h 22 min</text>
+<rect x="64" y="380" width="350" height="190" rx="18" fill="#0f1830" stroke="#fb7185" stroke-width="2.5"/>
+<rect x="88" y="400" width="30" height="5" rx="2.5" fill="#fb7185"/>
+<text x="88" y="436" font-size="22" fill="#fff" font-weight="700" text-anchor="start">The computer stops</text>
+<text x="88" y="482" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">No log explains it. Memory was</text>
+<text x="88" y="508" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">free: 46 GiB.</text>
+<rect x="440" y="380" width="350" height="190" rx="18" fill="#0f1830" stroke="#fbbf24" stroke-width="2.5"/>
+<rect x="464" y="400" width="30" height="5" rx="2.5" fill="#fbbf24"/>
+<text x="464" y="436" font-size="22" fill="#fff" font-weight="700" text-anchor="start">My laptop notices</text>
+<text x="464" y="482" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">After 24 seconds it writes a</text>
+<text x="464" y="508" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">line to a log file. Nobody</text>
+<text x="464" y="534" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">reads a log file at night.</text>
+<rect x="816" y="380" width="350" height="190" rx="18" fill="#0f1830" stroke="#fb7185" stroke-width="2.5"/>
+<rect x="840" y="400" width="30" height="5" rx="2.5" fill="#fb7185"/>
+<text x="840" y="436" font-size="22" fill="#fff" font-weight="700" text-anchor="start">The alerts are silent</text>
+<text x="840" y="482" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">They ran on the same computer,</text>
+<text x="840" y="508" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">so they stopped too.</text>
+<rect x="1192" y="380" width="344" height="190" rx="18" fill="#0f1830" stroke="#34d399" stroke-width="2.5"/>
+<rect x="1216" y="400" width="30" height="5" rx="2.5" fill="#34d399"/>
+<text x="1216" y="436" font-size="22" fill="#fff" font-weight="700" text-anchor="start">I restart it by hand</text>
+<text x="1216" y="482" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">in the morning, with the power</text>
+<text x="1216" y="508" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">button.</text>
+<rect x="64" y="596" width="726" height="186" rx="18" fill="#0f1830" stroke="#fb7185" stroke-width="2.5"/>
+<rect x="88" y="616" width="30" height="5" rx="2.5" fill="#fb7185"/>
+<text x="88" y="652" font-size="22" fill="#fff" font-weight="700" text-anchor="start">The watchdog timer should have restarted it</text>
+<text x="88" y="698" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">It is a timer inside the chipset. I had configured it, and my script</text>
+<text x="88" y="724" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">said it was active. The system had skipped its driver without any</text>
+<text x="88" y="750" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">message.</text>
+<rect x="816" y="596" width="720" height="186" rx="18" fill="#0f1830" stroke="#34d399" stroke-width="2.5"/>
+<rect x="840" y="616" width="30" height="5" rx="2.5" fill="#34d399"/>
+<text x="840" y="652" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Today</text>
+<text x="840" y="698" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">The timer restarts the computer in about 30 seconds. My phone gets</text>
+<text x="840" y="724" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">an alert. My laptop tells me after 5 minutes.</text>
+<line x1="64" y1="806" x2="1536" y2="806" stroke="#25345c"/>
+<text x="64" y="852" font-size="23" fill="#fff" font-weight="700">Do not trust a setting. Check the real state.</text>
+</svg>

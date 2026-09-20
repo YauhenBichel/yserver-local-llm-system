@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080d1c"/><stop offset="1" stop-color="#101a36"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+<pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity="0.05"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8f9fff"/></marker>
+<marker id="arbad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#fb7185"/></marker>
+<marker id="arok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker></defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
+<text x="64" y="84" font-size="42" fill="#fff" font-weight="800">One endpoint, two models</text>
+<text x="64" y="122" font-size="22" fill="#9fb0e6">My tools talk to one address. A small router decides for each request: my local model, or the</text>
+<text x="64" y="152" font-size="22" fill="#9fb0e6">cloud. Privacy comes first.</text>
+<text x="1536" y="72" font-size="20" fill="#fff" font-weight="700" text-anchor="end">Yauhen Bichel</text><text x="1536" y="96" font-size="16" fill="#8fa3d9" text-anchor="end">github.com/YauhenBichel</text>
+<rect x="64" y="204" width="280" height="98" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="88" y="224" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="88" y="260" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Editor assistant</text>
+<path d="M344 253 L392 253" stroke="#8f9fff" stroke-width="3" fill="none"/>
+<rect x="64" y="322" width="280" height="98" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="88" y="342" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="88" y="378" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Cursor</text>
+<path d="M344 371 L392 371" stroke="#8f9fff" stroke-width="3" fill="none"/>
+<rect x="64" y="440" width="280" height="98" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="88" y="460" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="88" y="496" font-size="22" fill="#fff" font-weight="700" text-anchor="start">My scripts</text>
+<path d="M344 489 L392 489" stroke="#8f9fff" stroke-width="3" fill="none"/>
+<path d="M392 253 L392 489" stroke="#8f9fff" stroke-width="3" fill="none"/>
+<path d="M392 371 L446 371" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="452" y="290" width="300" height="162" rx="18" fill="#0f1830" stroke="url(#accent)" stroke-width="2.5"/>
+<rect x="476" y="310" width="30" height="5" rx="2.5" fill="url(#accent)"/>
+<text x="476" y="346" font-size="22" fill="#fff" font-weight="700" text-anchor="start">One endpoint</text>
+<text x="476" y="392" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">It speaks the OpenAI chat</text>
+<text x="476" y="418" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">API.</text>
+<path d="M758 371 L826 371" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<text x="832" y="190" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.6" text-anchor="start">THE RULES, IN THIS ORDER</text>
+<rect x="832" y="204" width="420" height="146" rx="18" fill="#0f1830" stroke="#fb7185" stroke-width="2.5"/>
+<circle cx="870" cy="240" r="15" fill="url(#accent)"/><text x="870" y="247" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">1</text>
+<text x="896" y="248" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Privacy rules</text>
+<text x="856" y="294" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">A hard gate. Result: always local.</text>
+<rect x="832" y="360" width="420" height="146" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="870" cy="396" r="15" fill="url(#accent)"/><text x="870" y="403" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">2</text>
+<text x="896" y="404" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Routing rules</text>
+<text x="856" y="450" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">A YAML file that I can read. Result:</text>
+<text x="856" y="476" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">local or cloud.</text>
+<rect x="832" y="516" width="420" height="146" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="870" cy="552" r="15" fill="url(#accent)"/><text x="870" y="559" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">3</text>
+<text x="896" y="560" font-size="22" fill="#fff" font-weight="700" text-anchor="start">No cloud key?</text>
+<text x="856" y="606" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Result: local, and the answer says</text>
+<text x="856" y="632" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">why.</text>
+<rect x="1316" y="204" width="220" height="214" rx="18" fill="#0f1830" stroke="#34d399" stroke-width="2.5"/>
+<rect x="1340" y="224" width="30" height="5" rx="2.5" fill="#34d399"/>
+<text x="1340" y="260" font-size="22" fill="#fff" font-weight="700" text-anchor="start">My local</text>
+<text x="1340" y="290" font-size="22" fill="#fff" font-weight="700" text-anchor="start">model</text>
+<text x="1340" y="336" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">on my own</text>
+<text x="1340" y="362" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">computer</text>
+<rect x="1316" y="448" width="220" height="214" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="1340" y="468" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="1340" y="504" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Claude</text>
+<text x="1340" y="550" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">in the cloud,</text>
+<text x="1340" y="576" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">only when a rule</text>
+<text x="1340" y="602" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">allows it</text>
+<path d="M1258 277 L1310 277" stroke="#34d399" stroke-width="3" fill="none" marker-end="url(#arok)"/>
+<path d="M1258 478 L1310 478" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="64" y="674" width="1472" height="128" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="88" y="694" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="88" y="730" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Every decision explains itself</text>
+<text x="88" y="776" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">I can ask where a prompt would go, without sending it.</text>
+<line x1="64" y1="806" x2="1536" y2="806" stroke="#25345c"/>
+<text x="64" y="852" font-size="23" fill="#fff" font-weight="700">Privacy rules are data that you can read, not code that you must trust.</text>
+</svg>

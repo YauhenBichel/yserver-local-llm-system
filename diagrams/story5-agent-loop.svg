@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080d1c"/><stop offset="1" stop-color="#101a36"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+<pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity="0.05"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8f9fff"/></marker>
+<marker id="arbad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#fb7185"/></marker>
+<marker id="arok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker></defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
+<text x="64" y="84" font-size="42" fill="#fff" font-weight="800">How my agent works alone for hours</text>
+<text x="64" y="122" font-size="22" fill="#9fb0e6">It takes a task and repeats a small loop. Each decision is a JSON form with fixed fields, not a</text>
+<text x="64" y="152" font-size="22" fill="#9fb0e6">tool call that the model may get wrong.</text>
+<text x="1536" y="72" font-size="20" fill="#fff" font-weight="700" text-anchor="end">Yauhen Bichel</text><text x="1536" y="96" font-size="16" fill="#8fa3d9" text-anchor="end">github.com/YauhenBichel</text>
+<rect x="64" y="210" width="300" height="250" rx="18" fill="#0f1830" stroke="url(#accent)" stroke-width="2.5"/>
+<rect x="88" y="230" width="30" height="5" rx="2.5" fill="url(#accent)"/>
+<text x="88" y="266" font-size="22" fill="#fff" font-weight="700" text-anchor="start">A task</text>
+<text x="88" y="312" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">a goal with automatic</text>
+<text x="88" y="338" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">checks, a workspace, and</text>
+<text x="88" y="364" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">budgets for time, turns</text>
+<text x="88" y="390" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">and tokens</text>
+<path d="M370 300 L426 300" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="432" y="210" width="340" height="180" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="470" cy="246" r="15" fill="url(#accent)"/><text x="470" y="253" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">1</text>
+<text x="496" y="254" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Observe</text>
+<text x="456" y="300" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Read the state of the</text>
+<text x="456" y="326" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">workspace.</text>
+<path d="M778 300 L802 300" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="808" y="210" width="340" height="180" rx="18" fill="#0f1830" stroke="url(#accent)" stroke-width="2.5"/>
+<circle cx="846" cy="246" r="15" fill="url(#accent)"/><text x="846" y="253" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">2</text>
+<text x="872" y="254" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Decide</text>
+<text x="832" y="300" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Fill a JSON form: thought,</text>
+<text x="832" y="326" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">action, arguments.</text>
+<path d="M1154 300 L1178 300" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="1184" y="210" width="340" height="180" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="1222" cy="246" r="15" fill="url(#accent)"/><text x="1222" y="253" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">3</text>
+<text x="1248" y="254" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Act</text>
+<text x="1208" y="300" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Run the action. Tools work</text>
+<text x="1208" y="326" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">only inside the workspace.</text>
+<path d="M1354 396 L1354 454" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="1184" y="460" width="340" height="180" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="1222" cy="496" r="15" fill="url(#accent)"/><text x="1222" y="503" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">4</text>
+<text x="1248" y="504" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Verify</text>
+<text x="1208" y="550" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Run the goal's automatic</text>
+<text x="1208" y="576" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">checks.</text>
+<rect x="808" y="460" width="340" height="180" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<circle cx="846" cy="496" r="15" fill="url(#accent)"/><text x="846" y="503" font-size="18" font-weight="800" fill="#08101f" text-anchor="middle">5</text>
+<text x="872" y="504" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Save the step</text>
+<text x="832" y="550" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">To SQLite. A task continues</text>
+<text x="832" y="576" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">after a crash.</text>
+<path d="M1178 550 L1154 550" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<path d="M802 550 L778 550" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="432" y="460" width="340" height="180" rx="18" fill="#0f1830" stroke="#34d399" stroke-width="2.5"/>
+<rect x="456" y="480" width="30" height="5" rx="2.5" fill="#34d399"/>
+<text x="456" y="516" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Again, or stop</text>
+<text x="456" y="562" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">Stop when the checks pass, or</text>
+<text x="456" y="588" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">when a budget is used.</text>
+<path d="M602 454 L602 396" stroke="#34d399" stroke-width="3" fill="none" marker-end="url(#arok)"/>
+<rect x="64" y="480" width="300" height="160" rx="18" fill="#0f1830" stroke="#25345c" stroke-width="1.2"/>
+<rect x="88" y="500" width="30" height="5" rx="2.5" fill="#60a5fa"/>
+<text x="88" y="536" font-size="22" fill="#fff" font-weight="700" text-anchor="start">It also notices</text>
+<text x="88" y="582" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">when it repeats the same</text>
+<text x="88" y="608" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">action.</text>
+<rect x="64" y="660" width="1472" height="132" rx="18" fill="#0f1830" stroke="#fbbf24" stroke-width="2.5"/>
+<rect x="88" y="680" width="30" height="5" rx="2.5" fill="#fbbf24"/>
+<text x="88" y="716" font-size="22" fill="#fff" font-weight="700" text-anchor="start">Why a JSON form?</text>
+<text x="88" y="762" font-size="18" fill="#b6c3ea" font-weight="400" text-anchor="start">A native tool call failed on my first attempt. The JSON form was valid 3 of 3 times. A larger model called tools that did not exist.</text>
+<line x1="64" y1="806" x2="1536" y2="806" stroke="#25345c"/>
+<text x="64" y="852" font-size="23" fill="#fff" font-weight="700">Ask a local model for a structured decision, not for a tool call.</text>
+</svg>

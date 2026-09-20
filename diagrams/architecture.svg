@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#080d1c"/><stop offset="1" stop-color="#101a36"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+  <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#7c6cff" stop-opacity="0.35"/><stop offset="1" stop-color="#7c6cff" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.05"/></pattern>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8f9fff"/></marker>
+  <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
+<ellipse cx="660" cy="400" rx="330" ry="250" fill="url(#glow)"/>
+
+<text x="64" y="86" font-size="46" fill="#ffffff" font-weight="800">My own LLM system</text>
+<text x="64" y="124" font-size="23" fill="#9fb0e6">One small computer at home · my prompts never leave my house</text>
+<g><rect x="1262" y="52" width="274" height="44" rx="22" fill="none" stroke="url(#accent)" stroke-width="2"/><text x="1399" y="81" font-size="20" fill="#dfe7ff" text-anchor="middle">private · open models</text></g>
+
+<g><text x="1236" y="72" font-size="20" fill="#ffffff" font-weight="700" text-anchor="end">Yauhen Bichel</text><text x="1236" y="94" font-size="16" fill="#8fa3d9" text-anchor="end">github.com/YauhenBichel</text></g>
+
+<!-- clients -->
+<text x="64" y="196" font-size="17" fill="#8fa3d9" font-weight="600" letter-spacing="2">MY TOOLS</text>
+<g><rect x="64" y="216" width="292" height="58" rx="14" fill="#121b33" stroke="#25345c"/>
+<circle cx="98" cy="245" r="15" fill="url(#accent)" opacity="0.9"/><text x="98" y="252" font-size="17" text-anchor="middle" fill="#0b1020" font-weight="700">C</text>
+<text x="128" y="252" font-size="21" fill="#e8eeff">Claude Code</text></g>
+<g><rect x="64" y="286" width="292" height="58" rx="14" fill="#121b33" stroke="#25345c"/>
+<circle cx="98" cy="315" r="15" fill="url(#accent)" opacity="0.9"/><text x="98" y="322" font-size="17" text-anchor="middle" fill="#0b1020" font-weight="700">E</text>
+<text x="128" y="322" font-size="21" fill="#e8eeff">Editor assistant</text></g>
+<g><rect x="64" y="356" width="292" height="58" rx="14" fill="#121b33" stroke="#25345c"/>
+<circle cx="98" cy="385" r="15" fill="url(#accent)" opacity="0.9"/><text x="98" y="392" font-size="17" text-anchor="middle" fill="#0b1020" font-weight="700">S</text>
+<text x="128" y="392" font-size="21" fill="#e8eeff">Scripts and SDKs</text></g>
+<g><rect x="64" y="426" width="292" height="58" rx="14" fill="#121b33" stroke="#25345c"/>
+<circle cx="98" cy="455" r="15" fill="url(#accent)" opacity="0.9"/><text x="98" y="462" font-size="17" text-anchor="middle" fill="#0b1020" font-weight="700">A</text>
+<text x="128" y="462" font-size="21" fill="#e8eeff">AI agents</text></g>
+<text x="64" y="520" font-size="18" fill="#7f91c4">They ask for the names they know:</text>
+<text x="64" y="546" font-size="18" fill="#c9d6ff">"claude-sonnet", "gpt-4o"</text>
+
+<!-- arrow clients -> gateway -->
+<path d="M364 350 C 410 350, 420 350, 458 350" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<text x="411" y="330" font-size="16" fill="#9fb0e6" text-anchor="middle">secure</text><text x="411" y="382" font-size="16" fill="#9fb0e6" text-anchor="middle">tunnel</text>
+
+<!-- gateway -->
+<rect x="466" y="196" width="408" height="392" rx="24" fill="#0e1730" stroke="url(#accent)" stroke-width="2.5"/>
+<text x="492" y="246" font-size="17" fill="#8fa3d9" font-weight="600" letter-spacing="2">ONE ENTRANCE</text>
+<text x="492" y="290" font-size="38" fill="#ffffff" font-weight="800">Gateway</text>
+<text x="492" y="324" font-size="20" fill="#c9d6ff">understands the Anthropic API</text>
+<text x="492" y="350" font-size="20" fill="#c9d6ff">and the OpenAI API</text>
+<g><rect x="492" y="376" width="163" height="36" rx="18" fill="#16223f" stroke="#2b3b66"/><text x="573" y="400" font-size="17" fill="#c9d6ff" text-anchor="middle">checks access</text></g>
+<g><rect x="664.6" y="376" width="122" height="36" rx="18" fill="#16223f" stroke="#2b3b66"/><text x="726" y="400" font-size="17" fill="#c9d6ff" text-anchor="middle">one queue</text></g>
+<g><rect x="492" y="422" width="224" height="36" rx="18" fill="#16223f" stroke="#2b3b66"/><text x="604" y="446" font-size="17" fill="#c9d6ff" text-anchor="middle">name → role → model</text></g>
+<g><rect x="725.8" y="422" width="91" height="36" rx="18" fill="#16223f" stroke="#2b3b66"/><text x="771" y="446" font-size="17" fill="#c9d6ff" text-anchor="middle">memory</text></g>
+<g><rect x="492" y="468" width="275" height="36" rx="18" fill="#16223f" stroke="#2b3b66"/><text x="629" y="492" font-size="17" fill="#c9d6ff" text-anchor="middle">rejects too-long prompts</text></g>
+<g><rect x="492" y="514" width="132" height="36" rx="18" fill="#16223f" stroke="#2b3b66"/><text x="558" y="538" font-size="17" fill="#c9d6ff" text-anchor="middle">web search</text></g>
+<g><rect x="634.0" y="514" width="214" height="36" rx="18" fill="#16223f" stroke="#2b3b66"/><text x="741" y="538" font-size="17" fill="#c9d6ff" text-anchor="middle">prompts not logged</text></g>
+
+<!-- arrow gateway -> models -->
+<path d="M882 350 C 905 350, 915 350, 934 350" stroke="#8f9fff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+<!-- models -->
+<rect x="942" y="156" width="594" height="438" rx="24" fill="#0c142b" stroke="#25345c"/>
+<text x="968" y="196" font-size="17" fill="#8fa3d9" font-weight="600" letter-spacing="2">LOCAL MODELS · ONE ROLE EACH</text>
+<g><rect x="968" y="222" width="264" height="66" rx="14" fill="#121b33" stroke="#25345c"/>
+<rect x="968" y="222" width="6" height="66" rx="3" fill="#5eead4"/>
+<text x="990" y="249" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.2">CODING</text>
+<text x="990" y="274" font-size="20" fill="#f1f5ff">Qwen3-Coder-Next · 80B</text></g>
+<g><rect x="1250" y="222" width="264" height="66" rx="14" fill="#121b33" stroke="#25345c"/>
+<rect x="1250" y="222" width="6" height="66" rx="3" fill="#a78bfa"/>
+<text x="1272" y="249" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.2">REASONING</text>
+<text x="1272" y="274" font-size="20" fill="#f1f5ff">gpt-oss · 120B</text></g>
+<g><rect x="968" y="300" width="264" height="66" rx="14" fill="#121b33" stroke="#25345c"/>
+<rect x="968" y="300" width="6" height="66" rx="3" fill="#60a5fa"/>
+<text x="990" y="327" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.2">SMALL TASKS</text>
+<text x="990" y="352" font-size="20" fill="#f1f5ff">gpt-oss · 20B</text></g>
+<g><rect x="1250" y="300" width="264" height="66" rx="14" fill="#121b33" stroke="#25345c"/>
+<rect x="1250" y="300" width="6" height="66" rx="3" fill="#f472b6"/>
+<text x="1272" y="327" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.2">VISION · JUDGING</text>
+<text x="1272" y="352" font-size="20" fill="#f1f5ff">Qwen3.6 · 35B</text></g>
+<g><rect x="968" y="378" width="264" height="66" rx="14" fill="#121b33" stroke="#25345c"/>
+<rect x="968" y="378" width="6" height="66" rx="3" fill="#fbbf24"/>
+<text x="990" y="405" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.2">OCR</text>
+<text x="990" y="430" font-size="20" fill="#f1f5ff">DeepSeek-OCR</text></g>
+<g><rect x="1250" y="378" width="264" height="66" rx="14" fill="#121b33" stroke="#25345c"/>
+<rect x="1250" y="378" width="6" height="66" rx="3" fill="#34d399"/>
+<text x="1272" y="405" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.2">EMBEDDINGS</text>
+<text x="1272" y="430" font-size="20" fill="#f1f5ff">bge-m3 · on the CPU</text></g>
+<g><rect x="968" y="456" width="264" height="66" rx="14" fill="#121b33" stroke="#25345c"/>
+<rect x="968" y="456" width="6" height="66" rx="3" fill="#fb923c"/>
+<text x="990" y="483" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.2">AUDIO IN</text>
+<text x="990" y="508" font-size="20" fill="#f1f5ff">Voxtral · whisper.cpp</text></g>
+<g><rect x="1250" y="456" width="264" height="66" rx="14" fill="#121b33" stroke="#25345c"/>
+<rect x="1250" y="456" width="6" height="66" rx="3" fill="#38bdf8"/>
+<text x="1272" y="483" font-size="16" fill="#8fa3d9" font-weight="600" letter-spacing="1.2">SPEECH · IMAGES</text>
+<text x="1272" y="508" font-size="20" fill="#f1f5ff">Kokoro · ComfyUI</text></g>
+<rect x="968" y="540" width="568" height="0" />
+<g><rect x="968" y="538" width="546" height="40" rx="12" fill="#16223f"/><text x="1241" y="564" font-size="17.5" fill="#dfe7ff" text-anchor="middle">AMD Ryzen AI MAX+ 395 · 128 GB shared memory · built-in GPU</text></g>
+
+<!-- bottom cards -->
+<g><rect x="64" y="620" width="470" height="150" rx="18" fill="#0f1830" stroke="#25345c"/>
+<rect x="88" y="644" width="34" height="6" rx="3" fill="#5eead4"/>
+<text x="88" y="682" font-size="25" fill="#ffffff" font-weight="700">It works alone</text>
+<text x="88" y="714" font-size="19" fill="#b6c3ea">An AI agent follows a written plan.</text>
+<text x="88" y="740" font-size="19" fill="#b6c3ea">Automatic checks · a spending limit</text>
+</g>
+<g><rect x="564" y="620" width="470" height="150" rx="18" fill="#0f1830" stroke="#25345c"/>
+<rect x="588" y="644" width="34" height="6" rx="3" fill="#a78bfa"/>
+<text x="588" y="682" font-size="25" fill="#ffffff" font-weight="700">It protects itself</text>
+<text x="588" y="714" font-size="19" fill="#b6c3ea">GPU memory control · watchdog timer</text>
+<text x="588" y="740" font-size="19" fill="#b6c3ea">Phone alerts · encrypted backups</text>
+</g>
+<g><rect x="1064" y="620" width="472" height="150" rx="18" fill="#0f1830" stroke="#25345c"/>
+<rect x="1088" y="644" width="34" height="6" rx="3" fill="#60a5fa"/>
+<text x="1088" y="682" font-size="25" fill="#ffffff" font-weight="700">It is also a small platform</text>
+<text x="1088" y="714" font-size="19" fill="#b6c3ea">A small Kubernetes cluster:</text>
+<text x="1088" y="740" font-size="19" fill="#b6c3ea">test apps, private search, CI jobs</text>
+</g>
+
+<!-- stats -->
+<line x1="64" y1="796" x2="1536" y2="796" stroke="#25345c"/>
+<g><text x="64" y="846" font-size="40" fill="url(#accent)" font-weight="800">0.64 s</text><text x="64" y="874" font-size="18" fill="#93a5d6">to the first token</text></g>
+<g><text x="400" y="846" font-size="40" fill="url(#accent)" font-weight="800">50 tokens/s</text><text x="400" y="874" font-size="18" fill="#93a5d6">generation speed</text></g>
+<g><text x="790" y="846" font-size="40" fill="url(#accent)" font-weight="800">132 / 0</text><text x="790" y="874" font-size="18" fill="#93a5d6">requests / failures, tested without supervision</text></g>
+<g><text x="1290" y="846" font-size="40" fill="url(#accent)" font-weight="800">13.7 s</text><text x="1290" y="874" font-size="18" fill="#93a5d6">to read an 8,000-token prompt</text></g>
+</svg>
