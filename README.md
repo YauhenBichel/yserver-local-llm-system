@@ -147,7 +147,10 @@ that are useful to other people.
 
 ### Writing
 
-Stories about this work: [medium.com/@yauhen.bichel](https://medium.com/@yauhen.bichel)
+Stories about this work, on [Medium](https://medium.com/@yauhen.bichel):
+
+- [I built my own LLM system at home](https://medium.com/@yauhen.bichel/i-built-my-own-llm-system-at-home-e92514a3b2be): the short version, a 2 minute read
+- [Ten days with my home server: how I made it fast, stable and able to work alone](https://medium.com/@yauhen.bichel/ten-days-with-my-home-server-how-i-made-it-fast-stable-and-able-to-work-alone-dab7a26f290e): the long version
 
 ## What is left out, on purpose
 
