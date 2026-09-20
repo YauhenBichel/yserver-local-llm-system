@@ -1,6 +1,6 @@
-# My own LLM system
+# yserver: my local LLM system
 
-One small computer at home serves open language models to my coding tools, my scripts and my side projects.
+One small computer at home, which I call yserver, serves open language models to my coding tools, my scripts and my side projects.
 This repository describes the system: what runs, how a request flows, how fast it is, and what went wrong.
 
 It is a description, not an installer. The parts that are useful to other people are published as separate
