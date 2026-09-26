@@ -22,20 +22,37 @@ request at a time, this measures only the queue. I set the options by hand.
 
 ## The prompt cache in long agent sessions
 
-Source: my agent runner saves the prompt-reading time of every decision. 188 decisions from 38 tasks, almost all
-on the 120B reasoning model. No new test was needed; the data was already there.
+Source: my agent runner saves the prompt-reading time of every decision. 188 decisions from 38 tasks, 11 to 17
+September 2026, almost all on the 120B reasoning model. No new test was needed; the data was already there.
+
+**The rule.** A turn "lost the cache" when its reading time, less the time that its new tokens explain, is at
+least half of a full read of the part that should have been cached, and at least 3 seconds. Only turns with at
+least 3,000 cached tokens are judged: 150 turns.
 
 | Measurement | Result |
 |---|---|
-| New tokens in a later turn | 77 (median), 248 (90th percentile) |
-| First turn, about 2,900 tokens | 6.4 s |
-| Later turn with the cache, under 4,000 tokens | 0.76 s |
-| Later turn with the cache, 8,000 to 12,000 tokens | 1.36 s |
-| Later turn with the cache, 12,000 to 20,000 tokens | 1.92 s |
-| Later turn without the cache, 4,000 to 8,000 tokens | 22.4 s |
-| Later turn without the cache, 8,000 to 12,000 tokens | 35.5 s |
-| All turns with the cache (102) | 111 s in total |
-| All turns without the cache (56) | 1,311 s in total, plus a model load each time |
+| New tokens in a later turn | 74 (median), 243 (90th percentile) |
+| Largest prompt in the whole record | 17,620 tokens, of a 64,000-token window |
+| Turns that kept the cache | 104, with 211 s of reading in total, median 1.25 s |
+| Turns that lost the cache | 46, with 1,185 s of reading in total, median 25.6 s, plus a model load each time |
+| Share of turns that lost the cache | **31 %** |
+| Their share of all reading time | **85 %** |
+
+| Prompt size | Kept the cache: median | Lost the cache: median |
+|---|---|---|
+| 3,000 to 4,000 tokens | 0.97 s (53 turns) | 12.5 s (9 turns) |
+| 4,000 to 8,000 tokens | 1.26 s (37 turns) | 23.1 s (21 turns) |
+| 8,000 to 12,000 tokens | 1.37 s (11 turns) | 35.5 s (15 turns) |
+
+Above 12,000 tokens there are only four turns, which is too few to report.
+
+The result does not depend on the exact thresholds of the rule: nine combinations give 83 to 85 % of the reading
+time. **A correction:** the first version of this page said "one third of the turns, 92 %". That came from a
+quicker rule, which also counted turns that were slow because they really had much new text. The rule above
+subtracts that time.
+
+**Limits.** This is one machine, one week and mostly one model, and it is an observation, not an experiment.
+The reading speed of the model is estimated from its first turns. Controlled experiments are planned.
 
 The cause of the lost caches was one of my own guards, which unloaded the model once a minute. See lesson 5 in
 [lessons.md](lessons.md).
