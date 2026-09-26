@@ -151,6 +151,7 @@ Stories about this work, on [Medium](https://medium.com/@yauhen.bichel):
 
 - [I built my own LLM system at home](https://medium.com/@yauhen.bichel/i-built-my-own-llm-system-at-home-e92514a3b2be): the short version, a 2 minute read
 - [Ten days with my home server: how I made it fast, stable and able to work alone](https://medium.com/@yauhen.bichel/ten-days-with-my-home-server-how-i-made-it-fast-stable-and-able-to-work-alone-dab7a26f290e): the long version
+- [I sent a prompt that was too long. The server answered someone else's question.](https://medium.com/@yauhen.bichel/i-sent-a-prompt-that-was-too-long-the-server-answered-someone-elses-question-3757a17c52a7): the silent error behind [flow 3](docs/flows.md#3-the-prompt-length-check) and [lesson 2](docs/lessons.md#2-reject-a-prompt-that-is-too-long-never-cut-it-silently)
 
 ## What is left out, on purpose
 
