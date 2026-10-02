@@ -42,19 +42,19 @@ Everything in the talk is open source: the write-up with the architecture, the f
 
 Why is this useful for your audience? Many people are starting to run models themselves, and the hard part is not the model. This talk gives them real numbers, honest mistakes and working tools. It runs twenty minutes, or five as a lightning talk. Thank you for considering it.
 
-## Timings in the draft
+## When each slide starts
 
 | Slide | Starts at | Lasts |
 |---|---|---|
 | 1 | 0:00 | 18 s |
-| 2 | 0:17 | 19 s |
-| 3 | 0:36 | 23 s |
-| 4 | 0:59 | 20 s |
+| 2 | 0:17 | 21 s |
+| 3 | 0:38 | 22 s |
+| 4 | 1:00 | 20 s |
 | 5 | 1:19 | 12 s |
-| 6 | 1:31 | 29 s |
-| 7 | 2:00 | 28 s |
-| 8 | 2:28 | 20 s |
-| 9 | 2:48 | 15 s |
-| 10 | 3:03 | 19 s |
+| 6 | 1:32 | 26 s |
+| 7 | 1:58 | 27 s |
+| 8 | 2:24 | 20 s |
+| 9 | 2:44 | 15 s |
+| 10 | 3:00 | 18 s |
 
-Total: 3:21.
+Total: 3:18.
