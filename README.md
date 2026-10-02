@@ -8,6 +8,8 @@ projects, and they are linked below.
 
 ![Architecture of my own LLM system](diagrams/architecture.png)
 
+**As a talk:** [One small computer, eight models](talk/) has the slides, a three-minute video and the script.
+
 ## Why I built it
 
 I use Claude Code, an editor assistant and my own scripts every day. I wanted them to work with models that I
