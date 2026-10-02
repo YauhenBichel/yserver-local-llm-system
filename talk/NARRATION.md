@@ -4,11 +4,11 @@ What is said over each slide in [one-small-computer-3-minutes.mp4](one-small-com
 
 ## 1. Cover
 
-Hello. I'm Yauhen Bichel, a software engineer in London. This is a proposal for a talk called One small computer, eight models. It is about running language models on my own machine at home, and about why most of what I learned was not about models.
+Hello. I'm Yauhen Bichel, a software engineer in London. This is a proposal for a talk called One small computer, eight models. It is about running language models on my own server at home, and about why most of what I learned was not about models.
 
-## 2. The computer
+## 2. The server
 
-The whole system is one small desktop with no separate graphics card. The processor and the built-in GPU share 128 gigabytes of memory. That is why a 52 gigabyte coding model fits on it and stays loaded all day, with a context of 64,000 tokens.
+The whole system runs on one server at home. Its GPU is built into the processor, and the two share 128 gigabytes of memory. That is why a 52 gigabyte coding model fits on it and stays loaded all day, with a context of 64,000 tokens.
 
 ## 3. Architecture
 
@@ -32,11 +32,11 @@ The second story is about speed. I expected long prompts to be the problem. They
 
 ## 8. llm-hops, the live demo
 
-To see problems like that, I wrote a tracing tool called llm-hops. This is a real request shown as a waterfall: the router, the gateway, the prompt check and the model, with the time of every hop. In the talk I will show this live, with a real request, a rejected prompt and a model switch.
+To see problems like that, I wrote a tracing tool called llm-hops. It shows one request as a waterfall: the router, the gateway, the prompt check and the model, with the time of every hop. This screenshot uses the tool's demo data. In the talk I will show it live on my own server, with a real request, a rejected prompt and a model switch.
 
-## 9. Six tools, all open source
+## 9. The write-up and five tools, all public
 
-Everything in the talk is open source: the write-up with the architecture, the flows and the numbers, the tracing tool, and the small checks for failures that stay silent. People can take them home and use them the same evening.
+What came out of this work is public: the write-up, with the architecture, the flows and the numbers; the tracing tool; and the small checks for failures that stay silent. The tools are open source. People can take them home and use them the same evening.
 
 ## 10. Close
 
@@ -47,14 +47,14 @@ Why is this useful for your audience? Many people are starting to run models the
 | Slide | Starts at | Lasts |
 |---|---|---|
 | 1 | 0:00 | 18 s |
-| 2 | 0:17 | 21 s |
-| 3 | 0:38 | 22 s |
-| 4 | 1:00 | 20 s |
+| 2 | 0:17 | 20 s |
+| 3 | 0:37 | 22 s |
+| 4 | 0:59 | 20 s |
 | 5 | 1:19 | 12 s |
-| 6 | 1:32 | 26 s |
-| 7 | 1:58 | 27 s |
-| 8 | 2:24 | 20 s |
-| 9 | 2:44 | 15 s |
-| 10 | 3:00 | 18 s |
+| 6 | 1:31 | 26 s |
+| 7 | 1:57 | 27 s |
+| 8 | 2:24 | 23 s |
+| 9 | 2:47 | 17 s |
+| 10 | 3:04 | 18 s |
 
-Total: 3:18.
+Total: 3:22.

@@ -20,7 +20,7 @@ large cloud models for hard tasks. Much of my daily work does not need them.
 
 | Part | What it is |
 |---|---|
-| Computer | GMKtec EVO-X2, a small desktop |
+| Computer | GMKtec EVO-X2, a compact machine that I run as a server |
 | Processor | AMD Ryzen AI MAX+ 395 ("Strix Halo"), with a built-in Radeon 8060S GPU |
 | Memory | 128 GB. The CPU and the GPU share it. Half is reserved for the GPU, so a 52 GB model fits on a built-in GPU |
 | System | Ubuntu 24.04, ROCm (the AMD software for GPU computing) |
