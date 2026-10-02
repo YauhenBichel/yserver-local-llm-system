@@ -3,9 +3,12 @@
 A talk version of this repository: what running my own LLM system at home taught me, and why most of it was not
 about models.
 
-[![The cover slide. Select it to watch the three-minute video](slides/01-cover.png)](one-small-computer-3-minutes.mp4)
+[![The cover slide. Select it to watch the three-minute video](slides/01-cover.png)](https://cdn.jsdelivr.net/gh/YauhenBichel/yserver-local-llm-system@main/talk/one-small-computer-3-minutes.mp4)
 
-**[Watch the three-minute video](one-small-computer-3-minutes.mp4)** · [the same video without sound](one-small-computer-3-minutes-silent.mp4) · [the script](NARRATION.md)
+**[Watch the three-minute video](https://cdn.jsdelivr.net/gh/YauhenBichel/yserver-local-llm-system@main/talk/one-small-computer-3-minutes.mp4)** · [the script](NARRATION.md) · download: [with narration](one-small-computer-3-minutes.mp4), [without sound](one-small-computer-3-minutes-silent.mp4)
+
+GitHub does not play a video file that is stored in a repository, so the "watch" link opens the same file
+through jsDelivr, a public CDN that serves this repository's files, and your browser plays it.
 
 The video is an overview of the talk, made from the slides. Its narration is a computer voice reading my
 script. The demo slide in it shows a real screenshot of [llm-hops](https://github.com/YauhenBichel/llm-hops);
