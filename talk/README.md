@@ -64,4 +64,4 @@ prompt that was too long.
 
 ## Inviting this talk
 
-I am based in London and glad to give it at a meetup. Write to yauhen.bichel@gmail.com.
+I am based in London and glad to give it at a meetup. Open an issue in this repository or write through my GitHub profile: https://github.com/YauhenBichel
